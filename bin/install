@@ -73,7 +73,7 @@ downloaded_file_path() {
 download_url() {
   local version=$1
   local variant=$(get_variant)
-  echo "https://github.com/oracle/graal/releases/download/vm-${version}/graalvm-ce-${version}-${variant}.tar.gz"
+  echo "https://github.com/oracle/graal/releases/download/vm-${version}/graalvm-ce-${variant}-${version}.tar.gz"
 }
 
 installer $ASDF_INSTALL_TYPE $ASDF_INSTALL_VERSION $ASDF_INSTALL_PATH
